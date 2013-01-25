@@ -16,6 +16,13 @@
 		7E8F12AE168372FB00AA3C66 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F12AD168372FB00AA3C66 /* Default.png */; };
 		7E8F12B0168372FB00AA3C66 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F12AF168372FB00AA3C66 /* Default@2x.png */; };
 		7E8F12B2168372FB00AA3C66 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F12B1168372FB00AA3C66 /* Default-568h@2x.png */; };
+		7E8F12BA1683732800AA3C66 /* JTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F12B91683732800AA3C66 /* JTViewController.m */; };
+		7E8F12BD168373A600AA3C66 /* JTHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F12BC168373A600AA3C66 /* JTHeaderView.m */; };
+		7E8F12BF168373DC00AA3C66 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8F12BE168373DC00AA3C66 /* QuartzCore.framework */; };
+		7E8F12DE16838A5100AA3C66 /* comment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F12DD16838A5100AA3C66 /* comment@2x.png */; };
+		7E8F12E016838A6700AA3C66 /* comment.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F12DF16838A6700AA3C66 /* comment.png */; };
+		7E8F12E416838ABB00AA3C66 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F12E316838ABB00AA3C66 /* edit.png */; };
+		7E8F12E616838AD700AA3C66 /* edit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F12E516838AD700AA3C66 /* edit@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,15 @@
 		7E8F12AD168372FB00AA3C66 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		7E8F12AF168372FB00AA3C66 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		7E8F12B1168372FB00AA3C66 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7E8F12B81683732800AA3C66 /* JTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JTViewController.h; path = Classes/JTViewController.h; sourceTree = "<group>"; };
+		7E8F12B91683732800AA3C66 /* JTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JTViewController.m; path = Classes/JTViewController.m; sourceTree = "<group>"; };
+		7E8F12BB168373A600AA3C66 /* JTHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTHeaderView.h; sourceTree = "<group>"; };
+		7E8F12BC168373A600AA3C66 /* JTHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTHeaderView.m; sourceTree = "<group>"; };
+		7E8F12BE168373DC00AA3C66 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7E8F12DD16838A5100AA3C66 /* comment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment@2x.png"; sourceTree = "<group>"; };
+		7E8F12DF16838A6700AA3C66 /* comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comment.png; sourceTree = "<group>"; };
+		7E8F12E316838ABB00AA3C66 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		7E8F12E516838AD700AA3C66 /* edit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +55,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E8F12A0168372FB00AA3C66 /* CoreGraphics.framework in Frameworks */,
+				7E8F12BF168373DC00AA3C66 /* QuartzCore.framework in Frameworks */,
 				7E8F129C168372FB00AA3C66 /* UIKit.framework in Frameworks */,
 				7E8F129E168372FB00AA3C66 /* Foundation.framework in Frameworks */,
-				7E8F12A0168372FB00AA3C66 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +85,7 @@
 		7E8F129A168372FB00AA3C66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E8F12BE168373DC00AA3C66 /* QuartzCore.framework */,
 				7E8F129B168372FB00AA3C66 /* UIKit.framework */,
 				7E8F129D168372FB00AA3C66 /* Foundation.framework */,
 				7E8F129F168372FB00AA3C66 /* CoreGraphics.framework */,
@@ -78,9 +96,17 @@
 		7E8F12A1168372FB00AA3C66 /* HeaderForm */ = {
 			isa = PBXGroup;
 			children = (
+				7E8F12E516838AD700AA3C66 /* edit@2x.png */,
+				7E8F12E316838ABB00AA3C66 /* edit.png */,
+				7E8F12DF16838A6700AA3C66 /* comment.png */,
+				7E8F12DD16838A5100AA3C66 /* comment@2x.png */,
 				7E8F12AA168372FB00AA3C66 /* AppDelegate.h */,
 				7E8F12AB168372FB00AA3C66 /* AppDelegate.m */,
 				7E8F12A2168372FB00AA3C66 /* Supporting Files */,
+				7E8F12B81683732800AA3C66 /* JTViewController.h */,
+				7E8F12B91683732800AA3C66 /* JTViewController.m */,
+				7E8F12BB168373A600AA3C66 /* JTHeaderView.h */,
+				7E8F12BC168373A600AA3C66 /* JTHeaderView.m */,
 			);
 			path = HeaderForm;
 			sourceTree = "<group>";
@@ -154,6 +180,10 @@
 				7E8F12AE168372FB00AA3C66 /* Default.png in Resources */,
 				7E8F12B0168372FB00AA3C66 /* Default@2x.png in Resources */,
 				7E8F12B2168372FB00AA3C66 /* Default-568h@2x.png in Resources */,
+				7E8F12DE16838A5100AA3C66 /* comment@2x.png in Resources */,
+				7E8F12E016838A6700AA3C66 /* comment.png in Resources */,
+				7E8F12E416838ABB00AA3C66 /* edit.png in Resources */,
+				7E8F12E616838AD700AA3C66 /* edit@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +196,8 @@
 			files = (
 				7E8F12A8168372FB00AA3C66 /* main.m in Sources */,
 				7E8F12AC168372FB00AA3C66 /* AppDelegate.m in Sources */,
+				7E8F12BA1683732800AA3C66 /* JTViewController.m in Sources */,
+				7E8F12BD168373A600AA3C66 /* JTHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
