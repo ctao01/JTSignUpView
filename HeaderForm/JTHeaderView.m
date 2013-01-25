@@ -31,6 +31,7 @@
         [tf setBackgroundColor:[UIColor clearColor]];
         [tf setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
         [tf setFont:[UIFont fontWithName:@"HelveticaNeue" size:14]];
+        [tf setDelegate:self];
         [self addSubview:tf];
         
         
@@ -43,6 +44,7 @@
         CGRect tvFrame = UIEdgeInsetsInsetRect(rect2, UIEdgeInsetsMake(1.0f, 15.0f , 1.0f , 5.0f));
 
         UITextView * tv = [[UITextView alloc]initWithFrame:tvFrame];
+        [tv setDelegate:self];
         [tv setBackgroundColor:[UIColor clearColor]];
         [self addSubview:tv];
     }
@@ -139,6 +141,16 @@
 
 - (BOOL) textViewShouldEndEditing:(UITextView *)textView
 {
+    return YES;
+}
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    
+    if([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
     return YES;
 }
 
